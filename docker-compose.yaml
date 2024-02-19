@@ -7,12 +7,12 @@ services:
 # docker run -d --name mongodb --network=roboshop   mongodb:1
   mongodb:
     image: mongodb:1
-    networks:
-    - roboshop
+    # networks:
+    # - roboshop
   catalogue:
     image: catalogue:1
-    networks:
-    - roboshop
+    # networks:
+    # - roboshop
     depends_on: 
     - mongodb
   web:
