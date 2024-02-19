@@ -1,6 +1,6 @@
 networks:
   default:
-    external:
+    external: true
       name:roboshop
 
 services:
@@ -21,6 +21,6 @@ services:
     - "80:80"
     depends_on:
     - catalogue
-    
+
 
 
